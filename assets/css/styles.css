@@ -1,0 +1,42 @@
+/* ---------------------------------------------------------
+   Custom site styles. Loaded on top of Tailwind (CDN).
+   Keep this file small — anything that can be a Tailwind
+   utility belongs in the markup, not here.
+   --------------------------------------------------------- */
+
+:root {
+  --accent: #2563eb;       /* blue-600 */
+  --accent-dark: #1e3a8a;  /* blue-900 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+code,
+.mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* Section anchor offset so the sticky nav doesn't cover headings */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Subtle hover lift on project / contact cards */
+.card {
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
+}
+
+/* Devicon font icons (skills section) */
+.devicon {
+  font-size: 2.25rem;
+}
