@@ -6,32 +6,34 @@
   <title>Blog — Salma Amr</title>
   <meta name="description" content="Salma Amr's blog — notes on backend development, data analysis, and what I'm learning." />
   <link rel="icon" href="https://avatars.githubusercontent.com/u/199253664?v=4" />
+  <script>(function(){var s=localStorage.getItem('theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s==='dark'||(!s&&d))document.documentElement.classList.add('dark');})();</script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class'};</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 antialiased min-h-screen flex flex-col">
   <main class="flex-1 max-w-3xl mx-auto px-6 py-20">
-    <a href="../" class="text-blue-600 hover:underline">← Back to portfolio</a>
-    <h1 class="mt-6 text-4xl font-bold text-slate-900">Blog</h1>
-    <p class="mt-4 text-lg text-slate-600">
+    <a href="../" class="text-blue-600 dark:text-blue-400 hover:underline">← Back to portfolio</a>
+    <h1 class="mt-6 text-4xl font-bold text-slate-900 dark:text-slate-100">Blog</h1>
+    <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
       No posts yet — this is where I'll publish short technical writeups on what I'm
       learning and building.
     </p>
-    <div class="mt-10 bg-white rounded-lg border border-slate-200 p-6">
-      <h2 class="text-lg font-semibold text-slate-900">Topics on the queue</h2>
-      <ul class="mt-3 list-disc list-outside ml-5 text-slate-700 space-y-1">
+    <div class="mt-10 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 p-6">
+      <h2 class="text-lg font-semibold text-slate-900 dark:text-slate-100">Topics on the queue</h2>
+      <ul class="mt-3 list-disc list-outside ml-5 text-slate-700 dark:text-slate-300 space-y-1">
         <li>Lessons from my Raya backend internship — what surprised me about real-world APIs.</li>
         <li>Sauvola vs. Otsu vs. adaptive thresholding — a practical comparison on the DIBCO dataset.</li>
         <li>From .NET backend to data analysis: picking up Pandas as a C# developer.</li>
       </ul>
     </div>
-    <p class="mt-10 text-sm text-slate-500">
+    <p class="mt-10 text-sm text-slate-500 dark:text-slate-400">
       In the meantime, the code is at
-      <a href="https://github.com/salmaamr129" class="text-blue-600 hover:underline">github.com/salmaamr129</a>.
+      <a href="https://github.com/salmaamr129" class="text-blue-600 dark:text-blue-400 hover:underline">github.com/salmaamr129</a>.
     </p>
   </main>
-  <footer class="py-8 text-center text-sm text-slate-500">
+  <footer class="py-8 text-center text-sm text-slate-500 dark:text-slate-400">
     <p>© <span id="year"></span> Salma Amr Adel Abdellatif</p>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
