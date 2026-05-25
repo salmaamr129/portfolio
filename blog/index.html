@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Salma Amr</title>
+  <meta name="description" content="Salma Amr's blog — notes on backend development, data analysis, and what I'm learning." />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/199253664?v=4" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', system-ui, sans-serif; }</style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+  <main class="flex-1 max-w-3xl mx-auto px-6 py-20">
+    <a href="../" class="text-blue-600 hover:underline">← Back to portfolio</a>
+    <h1 class="mt-6 text-4xl font-bold text-slate-900">Blog</h1>
+    <p class="mt-4 text-lg text-slate-600">
+      No posts yet — this is where I'll publish short technical writeups on what I'm
+      learning and building.
+    </p>
+    <div class="mt-10 bg-white rounded-lg border border-slate-200 p-6">
+      <h2 class="text-lg font-semibold text-slate-900">Topics on the queue</h2>
+      <ul class="mt-3 list-disc list-outside ml-5 text-slate-700 space-y-1">
+        <li>Lessons from my Raya backend internship — what surprised me about real-world APIs.</li>
+        <li>Sauvola vs. Otsu vs. adaptive thresholding — a practical comparison on the DIBCO dataset.</li>
+        <li>From .NET backend to data analysis: picking up Pandas as a C# developer.</li>
+      </ul>
+    </div>
+    <p class="mt-10 text-sm text-slate-500">
+      In the meantime, the code is at
+      <a href="https://github.com/salmaamr129" class="text-blue-600 hover:underline">github.com/salmaamr129</a>.
+    </p>
+  </main>
+  <footer class="py-8 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Salma Amr Adel Abdellatif</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

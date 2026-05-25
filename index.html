@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salma Amr — Backend Developer</title>
+  <meta name="description" content="Salma Amr Adel Abdellatif — backend developer (C# / .NET / SQL Server), Computer Science student at MUST, expanding into data analysis." />
+  <meta name="author" content="Salma Amr Adel Abdellatif" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/199253664?v=4" />
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:title" content="Salma Amr — Backend Developer" />
+  <meta property="og:description" content="Backend developer in C# / .NET / SQL Server, expanding into data analysis." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/199253664?v=4" />
+  <meta property="og:url" content="https://salmaamr129.github.io" />
+  <meta property="og:type" content="website" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <style>
+    :root {
+      --accent: #2563eb;        /* blue-600 */
+      --accent-dark: #1e3a8a;   /* blue-900 */
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    code, .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+    /* Section anchor offset so the sticky nav doesn't cover headings */
+    section[id] { scroll-margin-top: 5rem; }
+
+    /* Subtle hover lift on cards */
+    .card { transition: transform 150ms ease, box-shadow 150ms ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.15); }
+
+    /* Devicon sizing */
+    .devicon { font-size: 2.25rem; }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- ====== Top nav ====== -->
+  <nav class="fixed top-0 inset-x-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#top" class="font-semibold tracking-tight text-slate-900">Salma Amr</a>
+      <div class="hidden sm:flex items-center gap-6 text-sm text-slate-600">
+        <a href="#about" class="hover:text-slate-900">About</a>
+        <a href="#skills" class="hover:text-slate-900">Skills</a>
+        <a href="#experience" class="hover:text-slate-900">Experience</a>
+        <a href="#projects" class="hover:text-slate-900">Projects</a>
+        <a href="#blog" class="hover:text-slate-900">Blog</a>
+        <a href="#contact" class="hover:text-slate-900">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== Hero ====== -->
+  <header id="top" class="pt-32 pb-20 bg-gradient-to-b from-white to-slate-50">
+    <div class="max-w-5xl mx-auto px-6 grid sm:grid-cols-[1fr_auto] gap-10 items-center">
+      <div>
+        <p class="text-blue-700 font-medium mb-3 tracking-wide">Hi, I'm Salma —</p>
+        <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-tight">
+          Backend developer building APIs in <span class="text-blue-600">C# / .NET</span>,
+          backed by <span class="text-blue-600">SQL Server</span>.
+        </h1>
+        <p class="mt-6 text-lg text-slate-600 max-w-2xl">
+          Computer Science student at MUST, currently a backend intern at Raya.
+          Comfortable across the full server-side stack — ASP.NET Core, Entity Framework, MVC —
+          and now expanding into <strong class="text-slate-900">data analysis</strong> with Python and Pandas.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#projects"
+             class="px-5 py-2.5 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+            View projects
+          </a>
+          <a href="https://github.com/salmaamr129/salma-amr-cv/blob/main/Salma_Amr_CV.pdf"
+             target="_blank" rel="noopener"
+             class="px-5 py-2.5 rounded-md border border-slate-300 bg-white text-slate-700 font-medium hover:bg-slate-50 transition">
+            Download CV (PDF)
+          </a>
+          <a href="#contact"
+             class="px-5 py-2.5 rounded-md border border-slate-300 bg-white text-slate-700 font-medium hover:bg-slate-50 transition">
+            Get in touch
+          </a>
+        </div>
+      </div>
+      <img src="https://avatars.githubusercontent.com/u/199253664?v=4"
+           alt="Salma Amr avatar"
+           class="w-40 h-40 sm:w-48 sm:h-48 rounded-full ring-4 ring-white shadow-lg justify-self-center" />
+    </div>
+  </header>
+
+  <!-- ====== About ====== -->
+  <section id="about" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">About</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-slate-700">
+        <div class="md:col-span-2 space-y-4 leading-relaxed">
+          <p>
+            I'm a final-stretch Computer Science student at
+            <strong>Misr University for Science and Technology (MUST)</strong>,
+            graduating July 2027. Day-to-day I write backend code in C# / ASP.NET Core,
+            model data in SQL Server, and ship CRUD APIs end-to-end.
+          </p>
+          <p>
+            On top of the .NET stack I'm now learning <strong>data analysis</strong> —
+            Python, Pandas, NumPy, Matplotlib — and applying it to projects like
+            document image enhancement (see <a href="#projects" class="text-blue-600 underline-offset-2 hover:underline">DIBCO</a>
+            below). The goal is to be a backend engineer who can also talk about the data layer
+            comfortably, not just store and forward it.
+          </p>
+          <p>
+            I'm looking for a <strong>junior backend role</strong> where I can ship production
+            code, learn from senior engineers, and grow into a strong .NET developer.
+          </p>
+        </div>
+        <aside class="bg-white rounded-lg border border-slate-200 p-5 text-sm">
+          <h3 class="font-semibold text-slate-900 mb-3">At a glance</h3>
+          <dl class="space-y-2">
+            <div class="flex justify-between"><dt class="text-slate-500">Role</dt><dd>Backend Developer</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Stack</dt><dd>C# · .NET · SQL Server</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Currently</dt><dd>Intern @ Raya</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Studying</dt><dd>BSc CS @ MUST</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Graduating</dt><dd>July 2027</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">GPA</dt><dd>3.3 / 4.0</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Location</dt><dd>Cairo, Egypt</dd></div>
+            <div class="flex justify-between"><dt class="text-slate-500">Languages</dt><dd>Arabic, English</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Skills ====== -->
+  <section id="skills" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-slate-900 mb-2">Skills</h2>
+      <p class="text-slate-600 mb-10">What I work with day-to-day, and what I'm learning next.</p>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-4">Backend &amp; data</h3>
+          <ul class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-csharp-plain colored devicon"></i><span class="text-xs mt-2">C#</span></li>
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-dot-net-plain colored devicon"></i><span class="text-xs mt-2">.NET</span></li>
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-dotnetcore-plain colored devicon"></i><span class="text-xs mt-2">ASP.NET Core</span></li>
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-microsoftsqlserver-plain colored devicon"></i><span class="text-xs mt-2">SQL Server</span></li>
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-mysql-plain colored devicon"></i><span class="text-xs mt-2">MySQL</span></li>
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-visualstudio-plain colored devicon"></i><span class="text-xs mt-2">Visual Studio</span></li>
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-git-plain colored devicon"></i><span class="text-xs mt-2">Git</span></li>
+            <li class="card flex flex-col items-center bg-slate-50 rounded-lg p-3"><i class="devicon-github-original devicon"></i><span class="text-xs mt-2">GitHub</span></li>
+          </ul>
+          <p class="mt-5 text-sm text-slate-600">
+            Plus: Entity Framework Core, LINQ, Web API, MVC, Postman, IIS, Docker basics.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-blue-700 mb-4">
+            Currently learning — Data analysis
+          </h3>
+          <ul class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+            <li class="card flex flex-col items-center bg-blue-50 rounded-lg p-3 border border-blue-100"><i class="devicon-python-plain colored devicon"></i><span class="text-xs mt-2">Python</span></li>
+            <li class="card flex flex-col items-center bg-blue-50 rounded-lg p-3 border border-blue-100"><i class="devicon-pandas-original colored devicon"></i><span class="text-xs mt-2">Pandas</span></li>
+            <li class="card flex flex-col items-center bg-blue-50 rounded-lg p-3 border border-blue-100"><i class="devicon-numpy-original colored devicon"></i><span class="text-xs mt-2">NumPy</span></li>
+            <li class="card flex flex-col items-center bg-blue-50 rounded-lg p-3 border border-blue-100"><i class="devicon-matplotlib-plain colored devicon"></i><span class="text-xs mt-2">Matplotlib</span></li>
+            <li class="card flex flex-col items-center bg-blue-50 rounded-lg p-3 border border-blue-100"><i class="devicon-opencv-plain colored devicon"></i><span class="text-xs mt-2">OpenCV</span></li>
+            <li class="card flex flex-col items-center bg-blue-50 rounded-lg p-3 border border-blue-100"><i class="devicon-jupyter-plain colored devicon"></i><span class="text-xs mt-2">Jupyter</span></li>
+          </ul>
+          <p class="mt-5 text-sm text-slate-600">
+            Currently studying applied data analysis — exploratory analysis, visualization,
+            and supporting projects like the DIBCO document binarization work below.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Experience ====== -->
+  <section id="experience" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-slate-900 mb-10">Experience</h2>
+
+      <ol class="relative border-l-2 border-slate-200 ml-3 space-y-12">
+
+        <li class="ml-8">
+          <span class="absolute -left-[11px] mt-1.5 w-5 h-5 bg-blue-600 rounded-full ring-4 ring-white"></span>
+          <div class="flex flex-wrap justify-between items-baseline gap-2">
+            <h3 class="text-lg font-semibold text-slate-900">Backend Developer Intern</h3>
+            <time class="text-sm text-slate-500 mono">Sep 2025 – Nov 2025</time>
+          </div>
+          <p class="text-blue-700 font-medium">Raya · Cairo, Egypt</p>
+          <ul class="mt-3 list-disc list-outside ml-5 space-y-1.5 text-slate-700">
+            <li>Developed and consumed RESTful APIs using ASP.NET Core, implementing full CRUD operations with a SQL Server database.</li>
+            <li>Designed and queried relational database schemas including Products and Sellers tables to support backend data needs.</li>
+            <li>Built and tested API endpoints (GET, POST, PUT, DELETE) and integrated them with a client-side application.</li>
+          </ul>
+        </li>
+
+        <li class="ml-8">
+          <span class="absolute -left-[11px] mt-1.5 w-5 h-5 bg-slate-300 rounded-full ring-4 ring-white"></span>
+          <div class="flex flex-wrap justify-between items-baseline gap-2">
+            <h3 class="text-lg font-semibold text-slate-900">Full-Stack .NET Developer Trainee</h3>
+            <time class="text-sm text-slate-500 mono">Oct 2024 – May 2025</time>
+          </div>
+          <p class="text-blue-700 font-medium">
+            Digital Egypt Pioneers Initiative (DEPI) · Cairo, Egypt
+            ·
+            <a href="https://www.linkedin.com/posts/salmaamr129_dotnetdeveloper-backenddevelopment-fullstack-share-7348740681726615553-OEr0/"
+               target="_blank" rel="noopener" class="text-blue-600 underline-offset-2 hover:underline">
+              Certificate ↗
+            </a>
+          </p>
+          <ul class="mt-3 list-disc list-outside ml-5 space-y-1.5 text-slate-700">
+            <li>Built and deployed RESTful APIs with ASP.NET Core and Entity Framework Core.</li>
+            <li>Developed dynamic web applications using MVC architecture (controllers, views, middleware).</li>
+            <li>Completed workshops in soft skills, freelancing, client communication, and teamwork.</li>
+          </ul>
+        </li>
+
+        <li class="ml-8">
+          <span class="absolute -left-[11px] mt-1.5 w-5 h-5 bg-slate-300 rounded-full ring-4 ring-white"></span>
+          <div class="flex flex-wrap justify-between items-baseline gap-2">
+            <h3 class="text-lg font-semibold text-slate-900">BSc Computer Science</h3>
+            <time class="text-sm text-slate-500 mono">Sep 2023 – Jul 2027 (expected)</time>
+          </div>
+          <p class="text-blue-700 font-medium">Misr University for Science and Technology (MUST)</p>
+          <p class="mt-2 text-slate-700">Faculty of Computer Science · GPA 3.3 / 4.0.</p>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ====== Projects ====== -->
+  <section id="projects" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-slate-900 mb-2">Projects</h2>
+      <p class="text-slate-600 mb-10">Selected work — backend systems, plus a data / image-processing project.</p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <article class="card bg-slate-50 rounded-lg border border-slate-200 p-6 flex flex-col">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-slate-900">Price List API</h3>
+            <span class="text-xs bg-blue-100 text-blue-800 rounded px-2 py-0.5">Backend</span>
+          </div>
+          <p class="mt-2 text-slate-700">
+            RESTful Web API for managing products and sellers. Full CRUD, ASP.NET Core 8,
+            SQL Server, Docker, Swagger / OpenAPI.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-1.5 text-xs">
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">C#</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">ASP.NET Core</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">SQL Server</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">Docker</span>
+          </div>
+          <a href="https://github.com/salmaamr129/price-list-api" target="_blank" rel="noopener"
+             class="mt-4 self-start text-blue-600 font-medium hover:underline">View on GitHub →</a>
+        </article>
+
+        <article class="card bg-slate-50 rounded-lg border border-slate-200 p-6 flex flex-col">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-slate-900">Library Management System</h3>
+            <span class="text-xs bg-blue-100 text-blue-800 rounded px-2 py-0.5">Desktop</span>
+          </div>
+          <p class="mt-2 text-slate-700">
+            Desktop library app in C# Windows Forms with a SQL Server backend.
+            Login &amp; registration, dashboard, book catalog, borrow / return workflows,
+            member management.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-1.5 text-xs">
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">C#</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">WinForms</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">SQL Server</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">.NET Framework</span>
+          </div>
+          <a href="https://github.com/salmaamr129/LibraryManagementSystem" target="_blank" rel="noopener"
+             class="mt-4 self-start text-blue-600 font-medium hover:underline">View on GitHub →</a>
+        </article>
+
+        <article class="card bg-slate-50 rounded-lg border border-slate-200 p-6 flex flex-col md:col-span-2">
+          <div class="grid md:grid-cols-[2fr_1fr] gap-6 items-start">
+            <div>
+              <div class="flex items-start justify-between gap-4">
+                <h3 class="text-lg font-semibold text-slate-900">DIBCO Document Enhancement</h3>
+                <span class="text-xs bg-blue-100 text-blue-800 rounded px-2 py-0.5">Data / Image processing</span>
+              </div>
+              <p class="mt-2 text-slate-700">
+                Document image enhancement pipeline on the DIBCO dataset: preprocessing,
+                filter comparison, Sauvola binarization, morphological cleanup, and
+                evaluation against ground truth. Sauvola gave the best result on degraded
+                documents.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-xs">
+                <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">Python</span>
+                <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">OpenCV</span>
+                <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">NumPy</span>
+                <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">Jupyter</span>
+              </div>
+              <a href="https://github.com/salmaamr129/dibco-document-enhancement" target="_blank" rel="noopener"
+                 class="mt-4 inline-block text-blue-600 font-medium hover:underline">View on GitHub →</a>
+            </div>
+            <img src="assets/dibco-result.png"
+                 alt="DIBCO pipeline output: cleaned binarization next to ground truth"
+                 class="w-full rounded-md border border-slate-300" />
+          </div>
+        </article>
+
+        <article class="card bg-slate-50 rounded-lg border border-slate-200 p-6 flex flex-col">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-slate-900">Lexical Analyzer</h3>
+            <span class="text-xs bg-slate-200 text-slate-700 rounded px-2 py-0.5">CS fundamentals</span>
+          </div>
+          <p class="mt-2 text-slate-700">
+            Hand-written C++ scanner for arithmetic expressions — a state-machine lexer
+            recognising identifiers, integer literals, operators, and parentheses.
+            Implements the classic textbook approach (Sebesta, ch. 4).
+          </p>
+          <div class="mt-3 flex flex-wrap gap-1.5 text-xs">
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">C++</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">Compilers</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">FSA</span>
+          </div>
+          <a href="https://github.com/salmaamr129/lexical-analyzer-cpp" target="_blank" rel="noopener"
+             class="mt-4 self-start text-blue-600 font-medium hover:underline">View on GitHub →</a>
+        </article>
+
+        <article class="card bg-slate-50 rounded-lg border border-slate-200 p-6 flex flex-col opacity-90">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-slate-900">EDU-HUB</h3>
+            <span class="text-xs bg-slate-200 text-slate-700 rounded px-2 py-0.5">Full-stack</span>
+          </div>
+          <p class="mt-2 text-slate-700">
+            eLearning platform built with .NET Core, C#, JavaScript, HTML, CSS.
+            Students enroll in courses; professors manage courses and quizzes.
+            Source not currently public.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-1.5 text-xs">
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">.NET Core</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">C#</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">JS</span>
+          </div>
+        </article>
+
+        <article class="card bg-slate-50 rounded-lg border border-slate-200 p-6 flex flex-col opacity-90">
+          <div class="flex items-start justify-between gap-4">
+            <h3 class="text-lg font-semibold text-slate-900">Women's Wear</h3>
+            <span class="text-xs bg-slate-200 text-slate-700 rounded px-2 py-0.5">Frontend</span>
+          </div>
+          <p class="mt-2 text-slate-700">
+            Responsive fashion e-commerce frontend in HTML, CSS, JavaScript. Focus on UI
+            design and cross-browser compatibility. Source not currently public.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-1.5 text-xs">
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">HTML</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">CSS</span>
+            <span class="bg-slate-200 text-slate-700 rounded px-2 py-0.5">JavaScript</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Blog teaser ====== -->
+  <section id="blog" class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-wrap items-baseline justify-between gap-3 mb-6">
+        <h2 class="text-2xl font-bold text-slate-900">Blog</h2>
+        <a href="blog/" class="text-blue-600 font-medium hover:underline">All posts →</a>
+      </div>
+      <div class="bg-white rounded-lg border border-slate-200 p-6">
+        <p class="text-slate-700 leading-relaxed">
+          Coming soon — short writeups on what I'm learning and building.
+          Likely first topics:
+        </p>
+        <ul class="mt-3 list-disc list-outside ml-5 text-slate-700 space-y-1">
+          <li>Lessons from my Raya backend internship (what surprised me about real-world APIs).</li>
+          <li>Sauvola vs. Otsu vs. adaptive thresholding — a practical comparison on DIBCO.</li>
+          <li>From .NET backend to data analysis: notes on picking up Pandas as a C# developer.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Contact ====== -->
+  <section id="contact" class="py-20 bg-white border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-slate-900 mb-2">Get in touch</h2>
+      <p class="text-slate-600 mb-8">Open to junior backend roles. The quickest way to reach me:</p>
+
+      <div class="grid sm:grid-cols-3 gap-4">
+        <a href="mailto:salmaamr1344@gmail.com"
+           class="card flex items-center gap-3 bg-slate-50 rounded-lg border border-slate-200 p-5 hover:border-blue-300">
+          <span class="text-2xl">✉️</span>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-500">Email</div>
+            <div class="font-medium text-slate-900 break-all">salmaamr1344@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://github.com/salmaamr129" target="_blank" rel="noopener"
+           class="card flex items-center gap-3 bg-slate-50 rounded-lg border border-slate-200 p-5 hover:border-blue-300">
+          <span class="text-2xl"><i class="devicon-github-original"></i></span>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-500">GitHub</div>
+            <div class="font-medium text-slate-900">@salmaamr129</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/salmaamr129/" target="_blank" rel="noopener"
+           class="card flex items-center gap-3 bg-slate-50 rounded-lg border border-slate-200 p-5 hover:border-blue-300">
+          <span class="text-2xl"><i class="devicon-linkedin-plain colored"></i></span>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-500">LinkedIn</div>
+            <div class="font-medium text-slate-900">in/salmaamr129</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="py-8 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Salma Amr Adel Abdellatif</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
